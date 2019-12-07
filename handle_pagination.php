@@ -1,5 +1,5 @@
 <?php
-  include_once('conn.php');
+  require_once('conn.php');
   $page_limit = 20; // 每頁顯示筆數
   $sql = "SELECT * FROM k_comments WHERE parent_id = 0 ORDER BY created_at DESC";
   $result = $conn->query($sql);
